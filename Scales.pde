@@ -5,10 +5,8 @@ void setup() {
 void draw(){
 fill((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
 noStroke();
-ellipse(250,250,50,60);
-fill(255,255,0);
-triangle(250,250+50,250,250-50,250,150);
-}
+ellipse(240,250,50,70);
+triangle(250,235+50,250,265-50,300,250);
 void scale(int x, int y) {
   //your code here
 }
