@@ -1,5 +1,6 @@
 void setup(){
   size(500, 500);  
+  frameRate(5);
 }
 void draw(){
 boolean shift = true;
