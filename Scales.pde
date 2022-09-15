@@ -3,14 +3,14 @@ void setup(){
 }
 void draw(){
 boolean shift = true;
-for(int y = 10; y <= 500; y += 50)
+for(int y = 10; y <= 600; y += 50)
 {
-  for(int x = 20; x <= 500; x+=50)
+  for(int x = 20; x <= 600; x += 50)
   {
    if(shift==true)
-    ellipse(x+5,y,50,70);     
+    scale(x+10,y);     
   else
-    ellipse(x,y,50,70); 
+    scale(x,y); 
   }
   if(shift==true)
     shift = false;
@@ -21,6 +21,6 @@ for(int y = 10; y <= 500; y += 50)
 void scale(int x, int y) {
   fill((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
 noStroke();
-ellipse(240,250,50,70);
-triangle(250,235+50,250,265-50,300,250);
+ellipse(x-60,y,53,74);
+triangle(x-50,y+35,x-50,y-35,x,y);
 }
